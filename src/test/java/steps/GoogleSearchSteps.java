@@ -21,10 +21,11 @@ public class GoogleSearchSteps {
     @When("I type the search term from json")
     public void i_type_the_search_term_from_json() {
         googleSearchActions.enterSearchTerm(searchTerm);
+
     }
 
     @Then("I should see results related to Automation")
     public void i_should_see_results_related_to_automation() {
-        assertTrue(Hooks.driver.getTitle().toLowerCase().contains("automation"));
+        assertTrue(Hooks.driver.getTitle().toLowerCase().contains("Nothing"));
     }
 }
