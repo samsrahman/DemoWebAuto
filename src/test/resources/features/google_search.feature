@@ -18,4 +18,3 @@ Feature: Google Search
     Given I am on the Google search page
     When I type the search term from json
     Then I should see results related to Automation
-    @ValidateGoogleTitle @mobile
